@@ -1,0 +1,42 @@
+import pandas as pd 
+import numpy as np
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('C:/Udemy/Projects/Simple Linear Regression/SLR.csv')
+
+df.head()
+
+df.describe()
+
+X = df.iloc[:, :-1].values
+Y = df.iloc[:,-1].values
+
+from sklearn.model_selection import train_test_split
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.2)
+X_test
+
+
+from sklearn.linear_model import LinearRegression
+regressor = LinearRegression()
+regressor.fit(X_train, Y_train)
+
+y_pred = regressor.predict(X_test)
+
+
+plt.scatter(X_train, Y_train, color = 'red')
+plt.plot(X_train, regressor.predict(X_train))
+plt.title('Experience and Salary Training set')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+plt.show()
+
+plt.scatter(X_test, Y_test, color = 'green')
+plt.plot(X_test, y_pred)
+plt.title('Experience and Salary Testing set')
+plt.xlabel('Years of Experience')
+plt.ylabel('Salary')
+plt.show()
+
+output = pd.DataFrame(data = {"Experience": X_test.ravel(), "Salary": Y_test,"Predicted Salary": y_pred})
+ax = output.plot.scatter('Experience','Salary', color = 'red', label = 'Actual Salary' )
+output.plot.scatter('Experience', 'Predicted Salary', ax=ax, color = 'green', label = 'Predicted Salary')
