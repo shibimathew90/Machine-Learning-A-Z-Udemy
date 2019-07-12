@@ -13,7 +13,7 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 # In[11]:
 
 
-dataset = pd.read_csv('C:/Udemy/Machine Learning A-Z Template Folder/Part 6 - Reinforcement Learning/Section 33 - Thompson Sampling/Ads_CTR_Optimisation.csv')
+dataset = pd.read_csv('Ads_CTR_Optimisation.csv')
 
 
 # In[12]:
