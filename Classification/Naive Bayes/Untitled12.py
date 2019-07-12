@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 # In[17]:
 
 
-dataset = pd.read_csv('C:/Udemy/Machine Learning A-Z Template Folder/Part 3 - Classification/Section 18 - Naive Bayes/Social_Network_Ads.csv')
+dataset = pd.read_csv('Social_Network_Ads.csv')
 
 
 # In[18]:
