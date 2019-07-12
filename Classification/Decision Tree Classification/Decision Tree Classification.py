@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 # In[60]:
 
 
-dataset = pd.read_csv('C:/Udemy/Machine Learning A-Z Template Folder/Part 3 - Classification/Section 19 - Decision Tree Classification/Social_Network_Ads.csv')
+dataset = pd.read_csv('Social_Network_Ads.csv')
 
 
 # In[61]:
