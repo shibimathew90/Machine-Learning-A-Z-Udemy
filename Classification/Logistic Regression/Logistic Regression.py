@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 # In[4]:
 
 
-dataset = pd.read_csv('C:/Udemy/Machine-Learning-A-Z-New/Machine Learning A-Z New/Part 3 - Classification/Section 14 - Logistic Regression/Social_Network_Ads.csv')
+dataset = pd.read_csv('Social_Network_Ads.csv')
 
 
 # In[5]:
