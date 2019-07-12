@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 # In[2]:
 
 
-dataset = pd.read_csv('C:/Udemy/Machine Learning A-Z Template Folder/Part 3 - Classification/Section 16 - Support Vector Machine (SVM)/Social_Network_Ads.csv')
+dataset = pd.read_csv('Social_Network_Ads.csv')
 
 
 # In[3]:
