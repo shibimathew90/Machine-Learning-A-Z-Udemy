@@ -13,7 +13,7 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 # In[43]:
 
 
-dataset = pd.read_csv('C:/Udemy/Machine Learning A-Z Template Folder/Part 7 - Natural Language Processing/Section 36 - Natural Language Processing/Restaurant_Reviews.tsv', delimiter='\t', quoting=3)
+dataset = pd.read_csv('Restaurant_Reviews.tsv', delimiter='\t', quoting=3)
 
 # quoting = 3 ignores the " (double quotes) from our data. Suppose there is any " in the review column, it will just ignore any action on that double quote and move ahead
 
