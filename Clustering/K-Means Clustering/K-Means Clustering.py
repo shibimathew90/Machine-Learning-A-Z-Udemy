@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 # In[2]:
 
 
-dataset = pd.read_csv('C:/Udemy/Machine Learning A-Z Template Folder/Part 4 - Clustering/Section 24 - K-Means Clustering/Mall_Customers.csv')
+dataset = pd.read_csv('Mall_Customers.csv')
 
 
 # In[4]:
